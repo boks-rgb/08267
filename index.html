@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미덕 퀴즈</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html, body {
+        min-height: 100vh;
+        font-family: 'Arial', sans-serif;
+        background-color: #fceef4;
+        color: #333;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        margin-bottom: 1.5rem;
+        color: #666;
+        font-size: 1rem;
+      }
+
+      .meaning {
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .virtues-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 2rem;
+      }
+
+      .virtue {
+        padding: 8px 14px;
+        border: 2px solid hotpink;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .virtue:hover {
+        background-color: #ffe0eb;
+      }
+
+      .status {
+        text-align: center;
+        margin: 2rem 0 1rem;
+      }
+
+      .levels {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 3rem;
+      }
+
+      .level {
+        padding: 10px 14px;
+        background-color: white;
+        border-radius: 12px;
+        border: 2px solid #ccc;
+      }
+
+      .current-level {
+        background-color: #ffb6c1;
+        border-color: hotpink;
+      }
+
+      /* 반응형 */
+      @media (max-width: 480px) {
+        .virtue {
+          font-size: 0.9rem;
+          padding: 6px 10px;
+        }
+
+        .level {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>💎 미덕 퀴즈</h1>
+      <p class="subtitle">뜻에 맞는 미덕의 보석 단어를 골라주세요.</p>
+      <p class="meaning">뜻: 고마운 마음을 표현함</p>
+
+      <div class="virtues-grid">
+        <div class="virtue">감사</div>
+        <div class="virtue">배려</div>
+        <div class="virtue">유연성</div>
+        <div class="virtue">창의성</div>
+        <div class="virtue">결의</div>
+        <div class="virtue">봉사</div>
+        <div class="virtue">이상품기</div>
+        <div class="virtue">책임감</div>
+        <div class="virtue">겸손</div>
+        <div class="virtue">사랑</div>
+        <div class="virtue">이해</div>
+        <div class="virtue">청결</div>
+        <div class="virtue">관용</div>
+        <div class="virtue">사려</div>
+        <div class="virtue">인내</div>
+        <div class="virtue">초연</div>
+        <div class="virtue">근면</div>
+        <div class="virtue">상냥함</div>
+        <div class="virtue">인정</div>
+        <div class="virtue">충직</div>
+        <div class="virtue">기뻐함</div>
+        <div class="virtue">소신</div>
+        <div class="virtue">자율</div>
+        <div class="virtue">친절</div>
+        <div class="virtue">기지</div>
+        <div class="virtue">신뢰</div>
+        <div class="virtue">절도</div>
+        <div class="virtue">탁월함</div>
+        <div class="virtue">끈기</div>
+        <div class="virtue">신용</div>
+        <div class="virtue">정돈</div>
+        <div class="virtue">평온함</div>
+        <div class="virtue">너그러움</div>
+        <div class="virtue">열정</div>
+        <div class="virtue">정의로움</div>
+        <div class="virtue">한결같음</div>
+        <div class="virtue">도움</div>
+        <div class="virtue">예의</div>
+        <div class="virtue">정직</div>
+        <div class="virtue">헌신</div>
+        <div class="virtue">명예</div>
+        <div class="virtue">용기</div>
+        <div class="virtue">존중</div>
+        <div class="virtue">협동</div>
+        <div class="virtue">목적의식</div>
+        <div class="virtue">용서</div>
+        <div class="virtue">중용</div>
+        <div class="virtue">화합</div>
+        <div class="virtue">믿음직함</div>
+        <div class="virtue">우의</div>
+        <div class="virtue">진실함</div>
+        <div class="virtue">확신</div>
+      </div>
+
+      <div class="status">
+        <p>✨ 나의 미덕 포인트: <strong>0</strong></p>
+        <p style="margin-top: 0.5rem;">현재 레벨: 🐣 병아리</p>
+      </div>
+
+      <div class="levels">
+        <div class="level current-level">🐣 병아리</div>
+        <div class="level">🌱 새싹</div>
+        <div class="level">🌻 꽃망울</div>
+        <div class="level">🦋 나비</div>
+        <div class="level">🦁 용감이</div>
+        <div class="level">💎 보석왕</div>
+      </div>
+    </div>
+  </body>
+</html>
